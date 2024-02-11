@@ -31,6 +31,7 @@ In order for aria2p to be able to communicate with the aria2c process, RPC mode 
 RPC stands for Remote Procedure Call. Although aria2c supports both JSON-RPC and XML-RPC protocols, aria2p works with JSON only (not XML). 
 More information about how to configure aria2c to run as a daemon with RPC mode enabled can be found in the Configuration section of the documentation.
 
+%prep
 %autosetup -p1 -n %{name}-%{version}
 
 %build
