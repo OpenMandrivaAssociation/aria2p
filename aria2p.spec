@@ -34,7 +34,8 @@ More information about how to configure aria2c to run as a daemon with RPC mode 
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-%py_build
+#py_build
+python -m build --wheel --no-isolation
 
 %install
 %py_install
